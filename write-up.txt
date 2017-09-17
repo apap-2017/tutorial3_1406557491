@@ -1,0 +1,18 @@
+Latihan Project Hello World
+1. Tidak compile error. Terjadi whitelabel error, karena request "hello" yang diberikan browser tidak tersedia di controller,
+   controller hanya menyediakan balikan untuk request "hello123".
+2. Tidak compile error. Masih muncul, karena yang penting adalah return dari method tersebut, bukan nama methodnya.
+3. Tidak compile error. Terjadi whitelabel error, karena template dengan nama hello123.html tidak ada.
+
+Latihan Request Parameter
+1. Hasilnya sama saja dengan sebelumnya, yaitu "Selamat datang chanek!"
+2. Whitelabel error, karena secara default RequestParam harus diisi, alias required=true. hasilnya "Selamat datang null!"
+3. "Selamat datang dunia!", karena di define defaultValue untuk name adalah "dunia" (ketika parameter name tidak diisi oleh request browser)
+4. Karena yang dikeluarkan adalah method dari thymeleaf, sehingga tag p yang dibuat sudah di override oleh thymeleaf
+
+Latihan Path Variable
+1. "Selamat datang dunia!"
+2. localhost:8080/greeting/ menghasilkan error, karena ambigu, terdapat 2 request mapping terhadap "/greeting". Jika yang sebelumnya di
+   hapus, maka akan menghasilkan "Selamat datang dengklek!"
+3. localhost:8080/greeting/chanek menghasilkan "Selamat datang chanek!"
+
