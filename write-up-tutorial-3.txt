@@ -1,0 +1,27 @@
+Pada tutorial kali ini, dijelaskan konsep kerja dari Service, yang berisi interface dan class yang implements interface tadi. Secara garis besar, service berisi data dan pengolahan dari data tersebut.
+
+Pertanyaan
+1. "Data berhasil ditambahkan"
+2. whitelabel error, karena tidak memberikan parameter gpa, sedangkan gpa di define sebagai parameter yang required (harus diisi)
+3. muncul
+4. tidak, karena data bukan persistence data, jadi setiap aplikasi baru di run, variable studentList masih kosong
+5. muncul
+6. muncul
+
+Latihan
+1. - Tambahkan requestmapping baru di studentcontroller untuk menghandle path
+     variable
+   - Terima path variable yang berisi String npm
+   - panggil studentService.selectStudent(npm) dan simpan ke StudentModel
+   - masukan StudentModel ke Model untuk jadi data yang bisa diakses oleh UI
+   - di view.html tambahkan th:if, jika model tidak kosong, maka kembalikan
+     nilainya, jika null, tampilkan NPM tidak ditemukan
+
+2. - Tambahkan method baru untuk menghapus dari studentList pada service dan
+     serviceImpl
+   - Tambahkan requestmapping baru di studentcontroller untuk menghandle
+     pathvariable
+   - Terima pathvariable yang berisi String npm
+   - Panggil service delete yang tadi dibuat
+   - Masukan status berhasil atau tidak ke model
+   - Buat view baru (disini delete.html) berikan th:if sesuai dengan status
