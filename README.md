@@ -2,7 +2,6 @@
 
 Ini adalah project untuk memenuhi tutorial pada mata kuliah APAP.
 
-Dimulai dari tutorial 2, hingga tutorial-tutorial berikutnya, akan diupdate di repository ini.
 
 Prerequisite:
 - Java
